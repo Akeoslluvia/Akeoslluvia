@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.transition-container {
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 01;
+        transform: rotateX(0);
+    }
+}
+
+body {
+    background-image:  linear-gradient(90deg, rgba(37,36,34,0.30575980392156865) 48%, rgba(37,36,34,1) 100100%),linear-gradient(180deg, rgba(37,36,34,0) 0%, rgba(0,0,0,0.30626450116009285) 87%),url(images/aboutbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    background-attachment: fixed;
+    margin-bottom: 400px;
+    }
+
+/* header */
+div.header {
+    /* border: black solid 1px; */
+    height: 116.5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+}
+
+.home:visited, a.home:link{
+color:#F4F3EE;
+font-family: 'Roboto';
+font-size: 18.6px;
+text-decoration: none;
+}
+
+a.home:hover, a.home:active {
+    color: #FAD02C; 
+    transition: 0.35s;
+}
+
+
+.menu:visited, a.menu:link{
+color:#F4F3EE;
+font-family: 'Roboto';
+font-size: 18.6px;
+text-decoration: none;
+}
+
+a.menu:hover, a.menu:active {
+    color: #FAD02C; 
+    transition: 0.35s;
+}
+
+.about:visited, a.about:link{
+color:#F4F3EE;
+font-family: 'Roboto';
+font-size: 18.6px;
+text-decoration: none;
+}
+
+a.about:hover, a.about:active {
+    color: #FAD02C; 
+    transition: 0.35s;
+}
+
+.faq:visited, a.faq:link{
+color:#F4F3EE;
+font-family: 'Roboto';
+font-size: 18.6px;
+text-decoration: none;
+}
+
+a.faq:hover, a.faq:active {
+    color: #FAD02C; 
+    transition: 0.35s;
+}
+
+.transition-container {
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 01;
+        transform: rotateX(0);
+    }
+}
+
+
+/* body */
+
+.gallery {
+    font-family: 'League Spartan';
+    font-size: 50px;
+    background-image: url(images/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    padding-top: 170px;
+    box-shadow: 2px 8px 100px 0px rgba(0,0,0,0.2);
+}
+
+h3 {
+    margin-top:40px; 
+    text-shadow: 1px 2px 2px black; 
+    
+}
+
+h6 {
+    width: 600px;
+    text-align: center; 
+    font-size: 25px;
+}
+
+.gallery p {
+    color: #FAD02C;
+
+}
+.gallery h6 {
+color: whitesmoke;
+
+}
+.pictures img {
+    width: 15vw;
+    max-width: 400px;
+    height: auto;
+    transition: transform 1000ms;
+    margin-bottom: 20px;
+ 
+}
+
+table, th, td {
+padding: 5px;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+figure::after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+    top: -100px;
+	left: 60px;
+	width: 100%;
+	height: 100%; 
+	background: linear-gradient(180deg, rgba(37,36,34,0.4001763322884012) 100%, rgba(0,0,0,0.16193181818181823) 100%);
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+    text-align: center;
+}
+
+
+
+figcaption {
+    
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+    font-family: 'League Spartan', sans-serif;
+	font-size:1.2vw;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+    padding: 0;
+}
+
+
+a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+
+.addon {
+    height: 620px;
+    background-color:#801B24;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    color: #FAD02C;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxpic {
+display: flex;
+justify-content: center;
+
+}
+
+.addon img {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 3px 20px 0px black;
+}
+
+/* footer */
+.footer {
+   
+    background-color: #202020;
+    width: 100%;
+    position: relative; 
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: fit-content;
+    /* border: black solid 1px; */
+    align-self:center;
+    display: flex;
+    gap:10px;
+    margin-top:6px
+}
+
+.sailors {
+    /* border: black solid 1px; */
+    height: fit-content;
+    width: fit-content;
+    color: #FAD02C;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.copyright {
+    /* border: black solid 1px; */
+    height: fit-content;
+    width: fit-content;
+    color: whitesmoke;
+    font-family: 'Roboto';
+    align-self: center;
+    margin-top: 0px;
+}
+
+.footer1 {
+    background-color: black;
+    height: 29px;
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Roboto';
+}
+
+.gallery h6{
+  font-size:30px;
+}
+@media screen and (max-width: 785px) {
+
+    .addon img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        box-shadow: 0px 3px 20px 0px black;
+    }
+    .gallery h6 {
+        color: whitesmoke;
+        font-size:  20px;
+        padding-left: 50px;
+        padding-right:50px ;
+  
+}
+}
+@media screen and (max-width: 465px) {
+    .addon img {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        box-shadow: 0px 3px 20px 0px black;
+    }
+}
